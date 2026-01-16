@@ -68,7 +68,7 @@ class BatchNormRelu(tf.keras.layers.Layer):  # pylint: disable=missing-docstring
           epsilon=BATCH_NORM_EPSILON,
           center=center,
           scale=scale,
-          fused=False,
+          # fused=False,
           gamma_initializer=gamma_initializer)
 
   def call(self, inputs, training):
